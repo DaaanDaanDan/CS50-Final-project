@@ -1,7 +1,25 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Adobe Hebrew Regular";
 }
 
+#statsInput{
+  background-color: #424752;
+}
+
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: auto;
+}
+
+html {
+  background-color: #22252b;
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -19,7 +37,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +52,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.unorderedListHome {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #424752;
+}
+
+.listHome {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  float:left;
+  font-size: 30px;
+  border-right: 1px solid black;
+}
+
+.unorderedListHome :hover {
+  background-color:#282c34;
+}
+
+.listHome a {
+  color: white;
+}
+
+.activeNav{
+  background-color: #282c34;
 }
