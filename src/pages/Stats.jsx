@@ -39,7 +39,7 @@ function Stats() {
 
     return (
         <div style={{display:"flex", justifyContent:"start"}}>
-            <div style={{display:"flex", flexDirection:"column", gap:"20px", textAlign:"right", fontSize:"40px", color:"grey", lineHeight:"1"}}>
+            <div style={{marginTop:"5px", display:"flex", flexDirection:"column", gap:"20px", textAlign:"right", fontSize:"40px", color:"grey", lineHeight:"1"}}>
                 <StatWord val={agi} word={"Agility"}/>
                 <StatWord val={str} word={"Strength"}/>
                 <StatWord val={inte} word={"Intelect"}/>
@@ -48,7 +48,7 @@ function Stats() {
                 <SparePoints val={spare}/>
                 <ConfirmButton />
             </div>
-            <div style={{display:"flex", flexDirection:"column", marginLeft:"2px", gap:"48px"}}>
+            <div style={{display:"flex", flexDirection:"column", marginLeft:"2px", gap:"48px", marginTop:"5px"}}>
                 <div style={{display:"flex", flexDirection:"column"}}>
                     <button onClick={() => alterStat(agi, setAgi, 1)} style={{marginTop:"15px", cursor:"pointer"}} className="arrow up"></button>
                     <button onClick={() => alterStat(agi, setAgi, -1)} style={{cursor:"pointer"}} className="arrow down"></button>

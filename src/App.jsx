@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar"
 import './App.css';
 import { toBeInvalid } from '@testing-library/jest-dom/matchers';
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         </div>
       </header>
       <NavBar />
+      <Footer /> 
     </div>
   );
 }
