@@ -72,6 +72,11 @@ html {
   -webkit-transform: rotate(45deg);
 }
 
+.right{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
 .unorderedListHome {
   list-style-type: none;
   margin: 0;
@@ -99,4 +104,8 @@ html {
 
 .activeNav{
   background-color: #282c34;
+}
+
+.scrollFlex{
+  overflow-y: auto;
 }

@@ -9,7 +9,7 @@ function NavBar() {
   const [visibleButtons, setVisibleButtons] = useState({
     home: true,
     attributeSelection: true,
-    originSelection: false
+    originSelection: true
   })
 
   return (
