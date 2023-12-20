@@ -1,0 +1,18 @@
+.button-on {
+    cursor: pointer;
+    background-color: #424752;
+    line-height: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 2px solid black;
+    width: 130px;
+}
+
+.button-off {
+    background-color: #424752;
+    line-height: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 2px solid black;
+    width: 130px;
+}

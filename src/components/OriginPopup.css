@@ -1,6 +1,10 @@
-.popup{
-    position: fixed;
-    height: 100vh;
+.cameo{
+    font-family: "nitti-typewriter-cameo", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.origin-popup{
     width: 100%;
     top: 0;
     left: 0;
@@ -11,14 +15,15 @@
     align-items: center;
 }
 
-.popup-inner {
+.origin-popup-inner {
+    padding: 15px 8px;
     position: relative;
     width: 400px;
-    height: 550px;
-    background-color: #333946;
+    background-color: #020202;
+
   }
 
-.popup-inner .close-btn {
+.origin-popup-inner .close-btn {
     position: absolute;
     bottom: 0px;
     left:0px;
@@ -31,7 +36,7 @@
     font-size: 22px;
 }
 
-.popup-inner .select-btn {
+.origin-popup-inner .select-btn {
     position: absolute;
     bottom: 0px;
     right:0px;

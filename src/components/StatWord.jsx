@@ -2,11 +2,11 @@ function StatWord(props) {
 
     return (
         <div>
-            <div style={{display:"flex", gap:"10px", justifyContent:"end", alignItems:"center"}}>{props.word} <input value={props.val} id="statsInput" style={inputStyle} readOnly/></div>
+            <div style={{display:"flex", gap:"10px", justifyContent:"end", alignItems:"center", color:'white'}}>{props.word} <input value={props.val} id="statsInput" style={inputStyle} readOnly/></div>
         </div>
     )
 }
 
-const inputStyle = {lineHeight:"40px", margin:"5px 5px", width:"45px", borderRadius:"17px", textAlign:"center", fontSize:"30px", border:"2px solid black"}
+const inputStyle = {lineHeight:"25px", width:"30px", borderRadius:"5px", textAlign:"center", fontSize:"20px", border:"1px solid white", color:'white'}
 
 export default StatWord

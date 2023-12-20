@@ -1,0 +1,37 @@
+.class tr:nth-child(even) {
+    background-color: #020202;
+  }
+
+.class tr:nth-child(odd) {
+  background-color: #0f1216;
+}
+
+  
+.class tr {
+    height: 25px;
+}
+
+.button-on {
+  cursor: pointer;
+  background-color: #424752;
+  line-height: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 2px solid black;
+  width: 130px;
+}
+
+.button-off {
+  background-color: #424752;
+  line-height: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 2px solid black;
+  width: 130px;
+}
+
+.cameo{
+  font-family: "nitti-typewriter-cameo", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,16 @@
+.perks tr:nth-child(even) {
+    background-color: #020202;
+  }
+.perks tr {
+    height: 25px;
+}
+
+.perks td:nth-child(1) {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.perks th:nth-child(1) {
+    text-align: left;
+    padding-left: 10px;
+}

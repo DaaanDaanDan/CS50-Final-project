@@ -2,22 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Adobe Hebrew Regular";
+  font-family: "nitti-typewriter-normal", sans-serif;
+}
+
+.cameo{
+  font-family: "nitti-typewriter-cameo", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #statsInput{
-  background-color: #424752;
+  background-color: #020202;
 }
 
 .App {
-  background-color: #282c34;
+  background-color: #171819;
   min-height: 100vh;
   max-width: 1440px;
   margin: auto;
+  box-shadow: 0 0 20px 5px black;
 }
 
 html {
-  background-color: #22252b;
+  background-color: #0E0F0F;
 
 }
 .App-logo {
@@ -56,9 +63,9 @@ html {
 
 .arrow {
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   display: inline-block;
-  padding: 5px;
+  padding: 4px;
   background-color: transparent;
 }
 
@@ -82,7 +89,7 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #424752;
+  background-color: #333435;
 }
 
 .listHome {
@@ -90,22 +97,19 @@ html {
   text-align: center;
   padding: 14px 16px;
   float:left;
-  font-size: 30px;
+  font-size: 21.40px;
   border-right: 1px solid black;
-}
-
-.unorderedListHome :hover {
-  background-color:#282c34;
-}
-
-.listHome a {
   color: white;
 }
 
-.activeNav{
-  background-color: #282c34;
+.unorderedListHome :hover {
+  background-color:#020202;
 }
 
-.scrollFlex{
-  overflow-y: auto;
+.listHome.active {
+  background-color: #020202;
+}
+
+.scrollFlex {
+  overflow: auto;
 }

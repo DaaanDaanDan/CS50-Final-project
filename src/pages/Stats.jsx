@@ -1,18 +1,15 @@
 import { useState } from "react";
 import SparePoints from "../components/SparePoints";
 import StatWord from "../components/StatWord";
-import Limit3 from "../components/Limit3";
-import Limit0 from "../components/Limit0";
-import LimitSpare from "../components/LimitSpare";
-import ConfirmButton from "../components/ConfirmButton";
+import './Stats.css'
+import { useNavigate } from "react-router-dom";
 
-function Stats() {
+function Stats({handleShowTab, updateCharacterInfo}) {
 
 
     function alterStat(stat, setStat, value){
         if (spare - value < 0)
         {
-            setSpareLimit(true)
             return
         }
 
@@ -21,15 +18,11 @@ function Stats() {
         {
             setStat(newStat);
             setSpare(spare - value);
-            setSpareLimit(false)
         }
-        setIsMax0(newStat < 0)
-        setIsMax3(newStat > 3)
     }
 
-    const [spareLimit, setSpareLimit] = useState(false)
-    const [isMax0, setIsMax0] = useState(false)
-    const [isMax3, setIsMax3] = useState(false)
+    const navigate = useNavigate()
+
     const [agi, setAgi] = useState(1)
     const [str, setStr] = useState(1)
     const [inte, setInte] = useState(1)
@@ -37,44 +30,56 @@ function Stats() {
     const [vig, setVig] = useState(1)
     const [spare, setSpare] = useState(4)
 
+    function onClick() {
+        handleShowTab('origin');
+        navigate('/origin');
+        window.scrollTo(0, 0)
+        updateCharacterInfo({characterAgility: agi, characterStrength: str, characterIntelect: inte, characterPresence: pre, characterVigour: vig})
+    }
+ 
     return (
-        <div style={{display:"flex", justifyContent:"start"}}>
-            <div style={{marginTop:"5px", display:"flex", flexDirection:"column", gap:"20px", textAlign:"right", fontSize:"40px", color:"grey", lineHeight:"1"}}>
-                <StatWord val={agi} word={"Agility"}/>
-                <StatWord val={str} word={"Strength"}/>
-                <StatWord val={inte} word={"Intelect"}/>
-                <StatWord val={pre} word={"Presence"}/>
-                <div style={{marginBottom:"-20px"}}><StatWord val={vig} word={"Vigour"}/></div>
-                <SparePoints val={spare}/>
-                <ConfirmButton />
+        <div style={{gap:'20px', display:'flex', padding:'40px 200px', flexDirection:'column', alignItems:'center'}}>
+            <div style={{display:'flex', width:'100%', justifyContent:'center'}}> 
+                <img src={require("../Images/texto2.png")} alt="Header 2"></img>   
             </div>
-            <div style={{display:"flex", flexDirection:"column", marginLeft:"2px", gap:"48px", marginTop:"5px"}}>
-                <div style={{display:"flex", flexDirection:"column"}}>
-                    <button onClick={() => alterStat(agi, setAgi, 1)} style={{marginTop:"15px", cursor:"pointer"}} className="arrow up"></button>
+            <div style={{display:"flex", gap:"20px", textAlign:"right", fontSize:"20px", color:"grey", width:'100%', justifyContent:'center'}}>
+                <StatWord val={agi} word={"Agilidade"}/>
+                <div style={arrowStyle}>
+                    <button onClick={() => alterStat(agi, setAgi, 1)} style={{cursor:"pointer"}} className="arrow up"></button>
                     <button onClick={() => alterStat(agi, setAgi, -1)} style={{cursor:"pointer"}} className="arrow down"></button>
                 </div>
-                <div style={{display:"flex", flexDirection:"column"}}>
+                <StatWord val={str} word={"Força"}/>
+                <div style={arrowStyle}>
                     <button onClick={() => alterStat(str, setStr, 1)} style={{cursor:"pointer"}} className="arrow up"></button>
                     <button onClick={() => alterStat(str, setStr, -1)} style={{cursor:"pointer"}} className="arrow down"></button>
                 </div>
-                <div style={{display:"flex", flexDirection:"column"}}>
+                <StatWord val={inte} word={"Intelecto"}/>
+                <div style={arrowStyle}>
                     <button onClick={() => alterStat(inte, setInte, 1)} style={{cursor:"pointer"}} className="arrow up"></button>
                     <button onClick={() => alterStat(inte, setInte, -1)} style={{cursor:"pointer"}} className="arrow down"></button>
                 </div>
-                <div style={{display:"flex", flexDirection:"column"}}>
+                <StatWord val={pre} word={"Presença"}/>
+                <div style={arrowStyle}>
                     <button onClick={() => alterStat(pre, setPre, 1)} style={{cursor:"pointer"}} className="arrow up"></button>
                     <button onClick={() => alterStat(pre, setPre, -1)} style={{cursor:"pointer"}} className="arrow down"></button>
                 </div>
-                <div style={{display:"flex", flexDirection:"column"}}>
+                <StatWord val={vig} word={"Vigor"}/>
+                <div style={arrowStyle}>
                     <button onClick={() => alterStat(vig, setVig, 1)} style={{cursor:"pointer"}} className="arrow up"></button>
                     <button onClick={() => alterStat(vig, setVig, -1)} style={{cursor:"pointer"}} className="arrow down"></button>
                 </div>
             </div>
-            {isMax3 && <Limit3 />}
-            {isMax0 && <Limit0 />}
-            {spareLimit && <LimitSpare />}
+            <div>
+                <SparePoints val={spare}/>
+            </div>
+            <div>
+                <button onClick={onClick} disabled={!(spare===0)} style={(spare === 0) ? enabledButton : disabledButton}>Próximo passo</button>
+            </div>
         </div>
     )
 }
 
+const arrowStyle = {display:'flex', flexDirection:'column', justifyContent:'center', marginLeft:'-10px'}
+const disabledButton = {backgroundColor:"#020202", lineHeight:"20px", borderRadius:"5px", fontSize:"16px", border:"1px solid white", width:"200px", height:"70px", color:'white', opacity:'20%'}
+const enabledButton = {cursor:'pointer', backgroundColor:"#020202", lineHeight:"20px", borderRadius:"5px", fontSize:"16px", border:"1px solid white", width:"200px", height:"70px", color:'white'}
 export default Stats

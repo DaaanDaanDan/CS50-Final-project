@@ -1,0 +1,21 @@
+.button-on {
+    cursor: pointer;
+    background-color: #020202;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid white;
+    width: 200px;
+    height: 70px;
+    color: white;
+}
+
+.button-off {
+    background-color: #020202;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid white;
+    width: 200px;
+    height: 70px;
+    color: white;
+    opacity: 20%;
+}
