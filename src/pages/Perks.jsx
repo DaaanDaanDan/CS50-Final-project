@@ -511,6 +511,9 @@ function Perks({characterInfo, handleShowTab, updateCharacterInfo}) {
                 </div>
                 <PerksTable />
             </div>
+            <div style={{display:'flex', width:'100%', justifyContent:'center'}}>
+                <img src={require("../Images/perksSub.png")} alt="Header 4"></img> 
+            </div>
             <div style={{display:'flex', width:'100%', gap:'20px'}}>
                 <div style={{display:'flex', flexDirection:'row', gap:'20px'}}>
                     <div style={{display:'flex', flexDirection:'column', gap:'10px'}}>
@@ -542,13 +545,13 @@ function Perks({characterInfo, handleShowTab, updateCharacterInfo}) {
 }
 
 const insideText = {color:"white", fontSize:"15px", textAlign:"justify"}
-const optionsStyleOrigin = {display:"flex", backgroundColor:"orange", border:"1px solid white", width:"200px", height:"40px", borderRadius:"8px", alignItems:"center", padding:"0px 8px", fontSize:"20px", color:"white", flexDirection:"row", justifyContent:'center'}
+const optionsStyleOrigin = {display:"flex", backgroundColor:"#ed6e18", border:"1px solid white", width:"200px", height:"40px", borderRadius:"8px", alignItems:"center", padding:"0px 8px", fontSize:"20px", color:"white", flexDirection:"row", justifyContent:'center'}
 const optionsStyle = {cursor:"pointer", display:"flex", backgroundColor:"#020202", border:"1px solid white", width:"200px", height:"40px", borderRadius:"8px", alignItems:"center", padding:"0px 8px", fontSize:"20px", color:"white", flexDirection:"row", justifyContent:'center'}
-const activeClassStyle = {PointerEvent:'none', display:"flex", backgroundColor:"#B22729", border:"1px solid white", width:"200px", height:"40px", borderRadius:"8px", alignItems:"center", padding:"0px 8px", fontSize:"20px", color:"white", flexDirection:"row", justifyContent:'center'}
-const inactiveClassStyle = {cursor:"pointer", display:"flex", backgroundColor:"#6229", border:"1px solid white", width:"200px", height:"40px", borderRadius:"8px", alignItems:"center", padding:"0px 8px", fontSize:"20px", color:"#fff", flexDirection:"row", justifyContent:'center', opacity:'20%'}
+const activeClassStyle = {PointerEvent:'none', display:"flex", backgroundColor:"#ba292d", border:"1px solid white", width:"200px", height:"40px", borderRadius:"8px", alignItems:"center", padding:"0px 8px", fontSize:"20px", color:"white", flexDirection:"row", justifyContent:'center'}
+const inactiveClassStyle = {cursor:"pointer", display:"flex", backgroundColor:"#250809", border:"1px solid white", width:"200px", height:"40px", borderRadius:"8px", alignItems:"center", padding:"0px 8px", fontSize:"20px", color:"#fff", flexDirection:"row", justifyContent:'center', opacity:'20%'}
 const availableStyle = {alignItems:'center', gap:'10px', display:"flex" , fontSize:"20px", color:"white", flexDirection:"row"}
 const availableStyleInput = {textAlign:'center', display:"flex", backgroundColor:"#171819", border:"1px solid white", width:"30px", height:"25px", borderRadius:"8px", fontSize:"20px", color:"white"}
-const activeSpareStyle = {cursor:'pointer', display:"flex", backgroundColor:"green", border:"1px solid white", width:"200px", height:"40px", borderRadius:"8px", alignItems:"center", padding:"0px 8px", fontSize:"20px", color:"white", flexDirection:"row", justifyContent:'center'}
+const activeSpareStyle = {cursor:'pointer', display:"flex", backgroundColor:"#7dc441", border:"1px solid white", width:"200px", height:"40px", borderRadius:"8px", alignItems:"center", padding:"0px 8px", fontSize:"20px", color:"white", flexDirection:"row", justifyContent:'center'}
 const completePerksListStyle = {display:'flex', flexDirection:'column', gap:'10px'}
 const disabledButton = {backgroundColor:"#020202", lineHeight:"20px", borderRadius:"5px", fontSize:"16px", border:"1px solid white", width:"200px", height:"70px", color:'white', opacity:'20%'}
 const enabledButton = {cursor:'pointer', backgroundColor:"#020202", lineHeight:"20px", borderRadius:"5px", fontSize:"16px", border:"1px solid white", width:"200px", height:"70px", color:'white'}

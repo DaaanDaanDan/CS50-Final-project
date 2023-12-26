@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+# PARNORMAL ORDER RPG CHARACTER SHEET CREATION
+#### Video Demo:  <https://youtu.be/3u332-Bs_JE>
+#### Description:
+As my final project, I made a web application that helps RPG player create their character sheets
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I used the react library and as consequence I used JavaScript, HTML and CSS. For the last part I used a library called pdf-lib to manipulate the pdf with react.
 
-## Available Scripts
+My project is based on seven webpages that asks the user to input information and press interactive and responsible buttons that creates variables through the code.
 
-In the project directory, you can run:
+It helps the user with some interactive explanation of how each step works.
 
-### `npm start`
+When the user finishes all the character information needed, a character sheet pdf file filled with all the character information gathered through the steps becomes available for the user to download or print. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The design choises were all decided to make the webapp have a mistery/horror feeling, as the RPG system has it too. All the colors were decided based on the same pallete, making the design part harmonious.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project was made becouse creating a character in any of RPG systems usually takes a lot of time and is really hard to understant the rulling behind it, so this web application was made to make this process easier and faster, with friendly interfaces, interactive buttons and harmonious colors.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The files contained in the pages folder are all the pages found in the project, they are in a separated folder to make it easier to understand the project. All the image files were saved inside the Images folder becouse of the same reason. All the files found inside the components folder are the components used inside the pages, as the react library helps you separate your code in components. So all the popups, all the tables and some buttons became components to help the code get cleaner and help with some aditional features too, as you can pass children props to or from the components.
